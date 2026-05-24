@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
+    padding: 40px;
+}
+
+/* Main Resume Box */
+
+main{
+    max-width: 950px;
+    margin: auto;
+    background: #111827;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Header */
+
+header{
+    background: linear-gradient(135deg,#0ea5e9,#2563eb);
+    text-align: center;
+    padding: 35px;
+}
+
+header h1{
+    font-size: 42px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Sections */
+
+section{
+    padding: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+section h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    border-left: 5px solid #38bdf8;
+    padding-left: 12px;
+}
+
+/* Personal Details */
+
+.Personal_Details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Left Details */
+
+.details{
+    flex: 1;
+}
+
+.details p{
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.details b{
+    color: #38bdf8;
+    display: inline-block;
+    width: 140px;
+}
+
+/* Right Image Box */
+
+.profile-box{
+    width: 240px;
+    height: 280px;
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.profile-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Education */
+
+.education p{
+    font-size: 17px;
+    margin: 12px 0;
+    color: #e5e7eb;
+}
+
+/* Skills */
+
+.skill ul{
+    list-style: none;
+}
+
+.skill ul > li{
+    font-size: 22px;
+    color: #facc15;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.skill ol{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.skill ol li{
+    font-size: 17px;
+    margin: 10px 0;
+    color: #e5e7eb;
+    transition: 0.3s;
+}
+
+.skill ol li:hover{
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+}
+
+.copyright{
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding: 15px;
+    }
+
+    header h1{
+        font-size: 32px;
+    }
+
+    .Personal_Details{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .details b{
+        width: auto;
+    }
+
+    .profile-box{
+        width: 200px;
+        height: 240px;
+    }
+
+    section{
+        padding: 25px;
+    }
+}
